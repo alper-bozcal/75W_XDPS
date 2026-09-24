@@ -1,0 +1,251 @@
+[
+  {
+    "object": "config",
+    "pageCount": 3,
+    "pageTitle_1": [
+      "Monitoring",
+      "Set Point",
+      "Calibration"
+    ],
+    "pageTitle_2": [
+      "Monitor",
+      "Çalışma Noktası",
+      "Kalibrasyon"
+    ],
+    "bootModeAddress": 45,
+    "encryptModbus": true
+  },
+
+  {
+    "object": "indicator",
+    "page": 1,
+    "row": 1,
+    "side": "left",
+    "width": 200,
+    "title_1": "Warning Indicator",
+    "title_2": "Uyarılar",
+    "paramId": [
+      32
+    ],
+    "menu": [
+      {
+        "name_1": "Board Over Temp",
+        "name_2": "Cihaz Aşırı Sıcak",
+        "paramId": 32,
+        "bit": 1,
+        "bitValue": 1,
+        "color": "red",
+        "blink": false
+      },
+      {
+        "name_1": "PT100 Not Conn",
+        "name_2": "PT100 Bağlı Değil",
+        "paramId": 32,
+        "bit": 2,
+        "bitValue": 1,
+        "color": "red",
+        "blink": false
+      },
+      {
+        "name_1": "PT100 Over Temp",
+        "name_2": "PT100 Aşırı Sıcak",
+        "paramId": 32,
+        "bit": 3,
+        "bitValue": 1,
+        "color": "red",
+        "blink": false
+      },
+      {
+        "name_1": "Wrong Battery Type",
+        "name_2": "Yanlış Batarya Tipi",
+        "paramId": 32,
+        "bit": 5,
+        "bitValue": 1,
+        "color": "red",
+        "blink": false
+      }
+    ]
+  },
+  {
+    "object": "indicator",
+    "page": 1,
+    "row": 1,
+    "side": "right",
+    "width": 200,
+    "title_1": "Error Indicator",
+    "title_2": "Arızalar",
+    "paramId": [31],
+    "menu": [
+      {
+        "name_1": "Reverse Battery",
+        "name_2": "Batarya Ters",
+        "paramId": 31,
+        "bit": 0,
+        "bitValue": 1,
+        "color": "red",
+        "blink": false
+      },
+      {
+        "name_1": "Board Over Temp",
+        "name_2": "Cihaz Aşırı Sıcak",
+        "paramId": 31,
+        "bit": 1,
+        "bitValue": 1,
+        "color": "red",
+        "blink": false
+      },
+      {
+        "name_1": "Out Over Voltage",
+        "name_2": "Çıkış Volt Yüksek",
+        "paramId": 31,
+        "bit": 2,
+        "bitValue": 1,
+        "color": "red",
+        "blink": false
+      }
+    ]
+  },
+  {
+    "object": "indicator",
+    "page": 1,
+    "row": 2,
+    "side": "right",
+    "title_1": "Status Indicator",
+    "title_2": "Cihaz Durumu",
+    "width": 200,
+    "height": 165,
+    "paramId": [28],
+    "menu": [
+      {
+        "name_1": "Boost Mode Active",
+        "name_2": "Boost Mod Aktif",
+        "paramId": 28,
+        "bit": 0,
+        "bitValue": 1,
+        "color": "blue",
+        "blink": true
+      },
+      {
+        "name_1": "Output Active",
+        "name_2": "Çıkış Aktif",
+        "paramId": 46,
+        "bit": 0,
+        "bitValue": 1,
+        "color": "green",
+        "blink": false
+      },
+      {
+        "name_1": "Relay Active",
+        "name_2": "Röle Aktif",
+        "paramId": 47,
+        "bit": 0,
+        "bitValue": 1,
+        "color": "green",
+        "blink": false
+      }
+    ]
+  },
+  {
+    "object": "datacard",
+    "page": 1,
+    "row": 1,
+    "side": "center",
+    "paramId": [1,3]
+  },
+  {
+    "object": "roundguage",
+    "page": 1,
+    "row": 2,
+    "side": "center",
+    "paramId": [21],
+    "min": 0,
+    "max": 30,
+    "scale": [0,5,10,15,20,25,30]
+  },
+  {
+    "object": "roundguage",
+    "page": 1,
+    "row": 2,
+    "side": "center",
+    "paramId": [22],
+    "min": 0,
+    "max": 10,
+    "scale": [0,2,4,6,8,10]
+  },
+  {
+    "object": "multidatacard",
+    "page": 1,
+    "row": 2,
+    "side": "left",
+    "name": "Device HW/SW/Model Version",
+    "unit": false,
+    "separator": ":",
+    "paramId": [9974,9975, 29]
+  },
+  {
+    "object": "datacard",
+    "page": 1,
+    "row": 3,
+    "side": "center",
+    "paramId": [24,25,27]
+  },
+  {
+    "object": "datacard",
+    "page": 1,
+    "row": 4,
+    "side": "center",
+    "paramId": [20, 26, 10]
+  },
+
+
+  {
+    "object": "datacard",
+    "page": 2,
+    "row": 1,
+    "side": "center",
+    "paramId": [0, 2, 4, 12]
+  },
+  {
+    "object": "datacard",
+    "page": 2,
+    "row": 2,
+    "side": "center",
+    "paramId": [11, 6, 13, 5]
+  },
+  {
+    "object": "datacard",
+    "page": 2,
+    "row": 3,
+    "side": "center",
+    "paramId": [16, 17, 19]
+  },
+  {
+    "object": "datacard",
+    "page": 2,
+    "row": 4,
+    "side": "center",
+    "paramId": [14, 15, 41]
+  },
+  {
+    "object": "datacard",
+    "page": 2,
+    "row": 5,
+    "side": "center",
+    "paramId": [42, 43, 44, 51]
+  },
+
+
+  {
+    "object": "table",
+    "page": 3,
+    "row": 1,
+    "filter": true,
+    "paramId": [],
+    "paramGroup_1": [
+      "Calibration"
+    ],
+    "paramGroup_2": [
+      "Kalibrasyon"
+    ]
+  }
+]

@@ -1,0 +1,31 @@
+Circuit: * D:\OneDrive - ENKO Elektronik\Projects\DEIF Charger\90-150W\Tests\150W leakeage\150W-Leakeage-Model.asc
+
+C3: both pins shorted together -- ignoring.
+C37: both pins shorted together -- ignoring.
+C36: both pins shorted together -- ignoring.
+C40: both pins shorted together -- ignoring.
+C42: both pins shorted together -- ignoring.
+C33: both pins shorted together -- ignoring.
+C34: both pins shorted together -- ignoring.
+C72: both pins shorted together -- ignoring.
+WARNING: Node N005 is floating.
+
+.OP point found by inspection.
+
+Date: Mon Jan 30 14:01:34 2023
+Total elapsed time: 3.595 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 200080
+traniter = 200080
+tranpoints = 100041
+accept = 100035
+rejected = 6
+matrix size = 11
+fillins = 8
+solver = Normal
+Matrix Compiler1: 1.12 KB object code size  0.3/0.2/[0.2]
+Matrix Compiler2: 1.04 KB object code size  0.2/0.2/[0.2]
+

@@ -1,0 +1,295 @@
+/*
+ * parameter_definations.h
+ *
+ *  Created on: 24 Tem 2016
+ *      Author: EN
+ */
+
+#ifndef PARAMETER_DEFINITIONS_H_
+#define PARAMETER_DEFINITIONS_H_
+
+//! EVERY GROUP MUST HAVE G_MIN, G_MAX, G_IMP_MAX
+//! IF NEW GROUP GETS ADDED, ADAPTER_PDU SHOULD CHANGE addressToParamNo
+//G_MIN is possible minimum value for group
+//G_MAX is possible maximum value for group
+//G_IMP_MAX is implemented last value for group
+
+
+//Parametre tanimlamalari
+#define OUTPUT_VOLTAGE					1
+#define OUTPUT_CURRENT					2
+#define OUTPUT_RELAY					3
+#define VOUTPWM							4
+#define IOUTPWM							5
+#define OUTPUT_BOOST_VOLTAGE			6
+#define OUTPUT_BLANK_7  				7
+#define OUTPUT_CONS_CURRENT				8
+#define OUTPUT_CONS_VOLTAGE				9
+#define OUTPUT_FLOAT_VOLTAGE			10
+#define OUTPUT_CONS_CURRENT_TIME		11
+#define OUTPUT_CONS_VOLTAGE_TIME		12
+#define OUTPUT_BOOST_TIME_MINUTES		13
+#define OUTPUT_FLOAT_TIME				14
+#define OUTPUT_CHARGE_MODE				15
+#define OUTPUT_AUTO_BOOST 				16
+#define OUTPUT_BLANK_17   				17
+#define OUTPUT_BLANK_18                 18
+#define OUTPUT_BLANK_19					19
+#define DEVICE_RESET					20
+#define OUTPUT_REVERSE_VOLTAGE			21
+#define PWMFLAG     					22
+#define OUTPUT_BLANK_23					23
+#define OUTPUT_BLANK_24					24
+#define OUTPUT_BLANK_25					25
+#define OUTPUT_BLANK_26					26
+#define OUTPUT_MODE_AUTO				27
+#define OUTPUT_MODE_PSU					28
+#define OUTPUT_MODEL					29
+#define OUTPUT_CUT_OFF					30
+
+#define G1_MIN      0
+#define G1_MAX      OUTPUT_CUT_OFF // should be 99
+#define G1_IMP_MAX  OUTPUT_CUT_OFF
+
+
+#define MEASURE_OFFSET					OUTPUT_CUT_OFF
+#define MEASURE_CALIB_VOUT				(MEASURE_OFFSET + 1)
+#define MEASURE_CALIB_IOUT				(MEASURE_OFFSET + 2)
+#define MEASURE_CALIB_PT100				(MEASURE_OFFSET + 3)
+#define MEASURE_CALIB_NTC				(MEASURE_OFFSET + 4)
+#define MEASURE_CALIB_VBAT				(MEASURE_OFFSET + 5)
+#define MEASURE_OFF_VOUT				(MEASURE_OFFSET + 6)
+#define MEASURE_OFF_IOUT				(MEASURE_OFFSET + 7)
+#define MEASURE_OFF_PT100				(MEASURE_OFFSET + 8)
+#define MEASURE_OFF_NTC					(MEASURE_OFFSET + 9)
+#define MEASURE_OFF_VBAT				(MEASURE_OFFSET + 10) //40
+#define MEASURE_BLANK_10                 (MEASURE_OFFSET + 11)
+#define MEASURE_BLANK_11                 (MEASURE_OFFSET + 12)
+#define MEASURE_BLANK_12                 (MEASURE_OFFSET + 13)
+#define MEASURE_BLANK_13                 (MEASURE_OFFSET + 14)
+#define MEASURE_BLANK_14                 (MEASURE_OFFSET + 15)
+#define MEASURE_BLANK_15                 (MEASURE_OFFSET + 16)
+#define MEASURE_BLANK_16                 (MEASURE_OFFSET + 17)
+#define MEASURE_BLANK_17                 (MEASURE_OFFSET + 18)
+#define MEASURE_BLANK_18                 (MEASURE_OFFSET + 19)
+#define MEASURE_BLANK_19                 (MEASURE_OFFSET + 20) //50
+
+
+#define G2_MIN      MEASURE_CALIB_VOUT //should be 100
+#define G2_MAX      MEASURE_BLANK_19 //should be 199
+#define G2_IMP_MAX  MEASURE_BLANK_19
+
+
+#define TEMP_OFFSET                     MEASURE_BLANK_19
+#define TEMP_DERATE_NTC                 (TEMP_OFFSET + 1)
+#define TEMP_DERATE_PT100               (TEMP_OFFSET + 2)
+#define TEMP_BLANK_3                    (TEMP_OFFSET + 3)
+#define TEMP_BLANK_4                    (TEMP_OFFSET + 4)
+#define TEMP_COEFF_1                    (TEMP_OFFSET + 5)
+#define TEMP_COEFF_2                    (TEMP_OFFSET + 6)
+#define TEMP_PT100_ACT                  (TEMP_OFFSET + 7)
+#define TEMP_PT100_DVDT                 (TEMP_OFFSET + 8)
+#define TEMP_PT100_MAX                  (TEMP_OFFSET + 9)
+#define TEMP_BLANK_10                   (TEMP_OFFSET + 10) //60
+
+
+#define G3_MIN      TEMP_DERATE_NTC //should be 200
+#define G3_MAX      TEMP_BLANK_10 //should be 299
+#define G3_IMP_MAX  TEMP_BLANK_10
+
+
+#define PARALLEL_OFFSET                 TEMP_BLANK_10
+#define PARALLEL_WORKING                (PARALLEL_OFFSET+ 1)
+#define PARALLEL_CURRENT_COEFF          (PARALLEL_OFFSET+ 2)
+#define PARALLEL_BLANK_3                (PARALLEL_OFFSET+ 3)
+#define PARALLEL_BLANK_4                (PARALLEL_OFFSET+ 4)
+#define PARALLEL_BLANK_5                (PARALLEL_OFFSET+ 5)
+#define PARALLEL_BLANK_6                (PARALLEL_OFFSET+ 6)
+#define PARALLEL_BLANK_7                (PARALLEL_OFFSET+ 7)
+#define PARALLEL_BLANK_8                (PARALLEL_OFFSET+ 8)
+#define PARALLEL_BLANK_9                (PARALLEL_OFFSET+ 9)
+#define PARALLEL_BLANK_10               (PARALLEL_OFFSET+ 10) //70
+
+
+#define G4_MIN      PARALLEL_WORKING //should be 300
+#define G4_MAX      PARALLEL_BLANK_10 //should be 399
+#define G4_IMP_MAX  PARALLEL_BLANK_10
+
+
+#define LED_OFFSET                      PARALLEL_BLANK_10
+#define LED_COLOR                       (LED_OFFSET + 1)
+#define LED_FLASH_TIME                  (LED_OFFSET + 2)
+#define LED_CONSTANT                    (LED_OFFSET + 3)
+#define LED_BLINK                       (LED_OFFSET + 4)
+#define LED_BLANK_5                     (LED_OFFSET + 5)
+#define LED_BLANK_6                     (LED_OFFSET + 6)
+#define LED_BLANK_7                     (LED_OFFSET + 7)
+#define LED_BLANK_8                     (LED_OFFSET + 8)
+#define LED_BLANK_9                     (LED_OFFSET + 9)
+#define LED_BLANK_10                    (LED_OFFSET + 10) //80
+
+
+#define G5_MIN      LED_COLOR //should be 400
+#define G5_MAX      LED_BLANK_10 //should be 499
+#define G5_IMP_MAX  LED_BLANK_10
+
+
+#define DEVICE_MODEL_OFFSET					LED_BLANK_10 //Changes pdu.c address to no function
+#define DEVICE_CUSTOMER_NUMBER1             (1+DEVICE_MODEL_OFFSET)
+#define DEVICE_CUSTOMER_NUMBER2             (2+DEVICE_MODEL_OFFSET)
+#define DEVICE_CUSTOMER_NUMBER3             (3+DEVICE_MODEL_OFFSET)
+#define DEVICE_CUSTOMER_NUMBER4             (4+DEVICE_MODEL_OFFSET)
+#define DEVICE_CUSTOMER_NUMBER5             (5+DEVICE_MODEL_OFFSET)
+#define DEVICE_CUSTOMER_TEXT1               (6+DEVICE_MODEL_OFFSET)
+#define DEVICE_CUSTOMER_TEXT2               (7+DEVICE_MODEL_OFFSET)
+#define DEVICE_CUSTOMER_TEXT3               (8+DEVICE_MODEL_OFFSET)
+#define DEVICE_CUSTOMER_TEXT4               (9+DEVICE_MODEL_OFFSET)
+#define DEVICE_CUSTOMER_TEXT5               (10+DEVICE_MODEL_OFFSET) //90
+#define DEVICE_CUSTOMER_TEXT6               (11+DEVICE_MODEL_OFFSET)
+#define DEVICE_CUSTOMER_TEXT7               (12+DEVICE_MODEL_OFFSET)
+#define DEVICE_CUSTOMER_TEXT8               (13+DEVICE_MODEL_OFFSET)
+#define DEVICE_CUSTOMER_TEXT9               (14+DEVICE_MODEL_OFFSET)
+#define DEVICE_CUSTOMER_TEXT10              (15+DEVICE_MODEL_OFFSET)
+#define DEVICE_TOTAL_PARAMS_COUNT           (16+DEVICE_MODEL_OFFSET)
+#define DEVICE_DEF_VALS_START_ADR           (17+DEVICE_MODEL_OFFSET)
+#define DEVICE_MAX_VALS_START_ADR           (18+DEVICE_MODEL_OFFSET)
+#define DEVICE_MIN_VALS_START_ADR           (19+DEVICE_MODEL_OFFSET)
+#define DEVICE_COEF_VALS_START_ADR          (20+DEVICE_MODEL_OFFSET) //100
+#define DEVICE_DYNPASS_USERCODE				(21+DEVICE_MODEL_OFFSET)
+#define DEVICE_DYNPASS_SERVICECODE			(22+DEVICE_MODEL_OFFSET)
+#define DEVICE_DYNPASS_FACTORYCODE			(23+DEVICE_MODEL_OFFSET)
+#define DEVICE_DYNPASS_ENKOCODE				(24+DEVICE_MODEL_OFFSET)
+#define DEVICE_DYNPASS_USERPASS				(25+DEVICE_MODEL_OFFSET)
+#define DEVICE_DYNPASS_SERVICEPASS			(26+DEVICE_MODEL_OFFSET)
+#define DEVICE_DYNPASS_FACTORYPASS			(27+DEVICE_MODEL_OFFSET)
+#define DEVICE_DYNPASS_ENKOPASS				(28+DEVICE_MODEL_OFFSET)
+#define DEVICE_USER_PASSWORD				(29+DEVICE_MODEL_OFFSET)
+#define DEVICE_SERVICE_PASSWORD				(30+DEVICE_MODEL_OFFSET) //110
+#define DEVICE_FACTORY_PASSWORD				(31+DEVICE_MODEL_OFFSET)
+#define DEVICE_ENKO_PASSWORD				(32+DEVICE_MODEL_OFFSET)
+#define LOGIN_PASSWORD_ENTRY_CUSTOMER_REG1	(33+DEVICE_MODEL_OFFSET)
+#define LOGIN_PASSWORD_ENTRY_CUSTOMER_REG2	(34+DEVICE_MODEL_OFFSET)
+#define LOGIN_SECURITY_CUSTOMER_REG1		(35+DEVICE_MODEL_OFFSET)
+#define LOGIN_SECURITY_CUSTOMER_REG2		(36+DEVICE_MODEL_OFFSET)
+#define LOGIN_PASSWORD_ENTRY_ENKO_REG1		(37+DEVICE_MODEL_OFFSET)
+#define LOGIN_PASSWORD_ENTRY_ENKO_REG2		(38+DEVICE_MODEL_OFFSET)
+#define LOGIN_SECURITY_ENKO_REG1			(39+DEVICE_MODEL_OFFSET)
+#define LOGIN_SECURITY_ENKO_REG2			(40+DEVICE_MODEL_OFFSET) //120
+#define DEVICE_OPTIONAL_MODULE				(41+DEVICE_MODEL_OFFSET)
+#define DEVICE_HARDWARE_VER_REG1			(42+DEVICE_MODEL_OFFSET)
+#define DEVICE_HARDWARE_VER_REG2			(43+DEVICE_MODEL_OFFSET)
+#define DEVICE_BOOTLOADER_VER				(44+DEVICE_MODEL_OFFSET)
+#define DEVICE_SOFTWARE_VER					(45+DEVICE_MODEL_OFFSET)
+#define DEVICE_IDCPU_REG1					(46+DEVICE_MODEL_OFFSET)
+#define DEVICE_IDCPU_REG2					(47+DEVICE_MODEL_OFFSET)
+#define DEVICE_IDCPU_REG3					(48+DEVICE_MODEL_OFFSET)
+#define DEVICE_IDCPU_REG4					(49+DEVICE_MODEL_OFFSET)
+#define DEVICE_IDCPU_REG5					(50+DEVICE_MODEL_OFFSET) //130
+#define DEVICE_IDCPU_REG6					(51+DEVICE_MODEL_OFFSET)
+#define DEVICE_IDCPU_REG7					(52+DEVICE_MODEL_OFFSET)
+#define DEVICE_IDCPU_REG8					(53+DEVICE_MODEL_OFFSET)
+#define DEVICE_IDCPU_REG9					(54+DEVICE_MODEL_OFFSET)
+#define DEVICE_IDCPU_REG10					(55+DEVICE_MODEL_OFFSET)
+#define DEVICE_IDENKO_REG1					(56+DEVICE_MODEL_OFFSET)
+#define DEVICE_IDENKO_REG2					(57+DEVICE_MODEL_OFFSET)
+#define DEVICE_IDENKO_REG3					(58+DEVICE_MODEL_OFFSET)
+#define DEVICE_MODEL_NAME_REG1				(59+DEVICE_MODEL_OFFSET)
+#define DEVICE_MODEL_NAME_REG2				(60+DEVICE_MODEL_OFFSET) //140
+#define DEVICE_MODEL_NAME_REG3				(61+DEVICE_MODEL_OFFSET)
+#define DEVICE_MODEL_NAME_REG4				(62+DEVICE_MODEL_OFFSET)
+#define DEVICE_MODEL_NAME_REG5				(63+DEVICE_MODEL_OFFSET)
+#define DEVICE_MODEL_NAME_REG6				(64+DEVICE_MODEL_OFFSET)
+#define DEVICE_MODEL_NAME_REG7				(65+DEVICE_MODEL_OFFSET)
+#define DEVICE_MODEL_NAME_REG8				(66+DEVICE_MODEL_OFFSET)
+#define DEVICE_MODEL_NAME_REG9				(67+DEVICE_MODEL_OFFSET)
+#define DEVICE_MODEL_NAME_REG10				(68+DEVICE_MODEL_OFFSET) //148
+
+
+#define G6_MIN      DEVICE_CUSTOMER_NUMBER1 //should be 500
+#define G6_MAX      DEVICE_MODEL_NAME_REG10 //should be 599
+#define G6_IMP_MAX  DEVICE_MODEL_NAME_REG10
+
+
+#define ERR_OFFSET                      DEVICE_MODEL_NAME_REG10 //148
+#define ERR_FLAG                        (ERR_OFFSET + 1)
+#define ERR_REVERSE						(ERR_OFFSET + 2)
+#define ERR_OVER_TEMP                   (ERR_OFFSET + 3)
+#define ERR_OVER_VOLT                   (ERR_OFFSET + 4)
+#define ERR_BLANK_5                     (ERR_OFFSET + 5)
+#define ERR_BLANK_6                     (ERR_OFFSET + 6)
+#define ERR_BLANK_7                     (ERR_OFFSET + 7)
+#define ERR_BLANK_8                     (ERR_OFFSET + 8)
+#define ERR_BLANK_9                     (ERR_OFFSET + 9)
+#define ERR_BLANK_10                    (ERR_OFFSET + 10)
+#define ERR_BLANK_11                    (ERR_OFFSET + 11)
+#define ERR_BLANK_12                    (ERR_OFFSET + 12) //160
+
+#define G7_MIN      ERR_FLAG 	 //should be 600
+#define G7_MAX      ERR_BLANK_12 //should be 699
+#define G7_IMP_MAX  ERR_BLANK_12
+
+
+#define WARN_OFFSET                      ERR_BLANK_12 //160
+#define WARN_FLAG                        (WARN_OFFSET + 1)
+#define WARN_ADC					     (WARN_OFFSET + 2)
+#define WARN_OVER_TEMP                   (WARN_OFFSET + 3)
+#define WARN_PT100_CONN                  (WARN_OFFSET + 4)
+#define WARN_PT100_TEMP                  (WARN_OFFSET + 5)
+#define WARN_MAX_CURR                    (WARN_OFFSET + 6)
+#define WARN_BATT_VOLT                   (WARN_OFFSET + 7)
+#define WARN_BLANK_8                     (WARN_OFFSET + 8)
+#define WARN_BLANK_9                     (WARN_OFFSET + 9)
+#define WARN_BLANK_10                    (WARN_OFFSET + 10) //170
+
+#define G8_MIN      WARN_FLAG 	  //should be 700
+#define G8_MAX      WARN_BLANK_10 //should be 799
+#define G8_IMP_MAX  WARN_BLANK_10
+
+#define DEBUG_OFFSET                      WARN_BLANK_10 //170
+#define DEBUG_FLAG                        (DEBUG_OFFSET + 1)
+#define DEBUG_MODE						  (DEBUG_OFFSET + 2)
+#define DEBUG_TAG	                      (DEBUG_OFFSET + 3)
+#define DEBUG_RETURN_FACTORY              (DEBUG_OFFSET + 4)
+#define DEBUG_DERATE                      (DEBUG_OFFSET + 5)
+#define DEBUG_BLANK_6                     (DEBUG_OFFSET + 6)
+#define DEBUG_BLANK_7                     (DEBUG_OFFSET + 7)
+#define DEBUG_BLANK_8                     (DEBUG_OFFSET + 8)
+#define GENERAL_DYNAMIC_PASS_TYPE         (DEBUG_OFFSET + 9)
+#define DEBUG_BLANK_10                    (DEBUG_OFFSET + 10) //180
+
+#define G9_MIN      DEBUG_FLAG 	  //should be 800
+#define G9_MAX      DEBUG_BLANK_10 //should be 899
+#define G9_IMP_MAX  DEBUG_BLANK_10
+
+
+#define PARAM_LAST_INDEX				DEBUG_BLANK_10
+#define PARAM_USERS_LAST_INDEX			10000//MONITORING_BLANK_15		/// Fram yuklemeleri icin kullaniliyor, Modem ve ProductID degerlerini icermiyor
+
+
+#define MONITORING_OFFSET				520
+#define MONITORING_VOLTAGE				(MONITORING_OFFSET+1)
+#define MONITORING_CURRENT				(MONITORING_OFFSET+2)
+#define MONITORING_PT100				(MONITORING_OFFSET+3)
+#define MONITORING_NTC  				(MONITORING_OFFSET+4)
+#define MONITORING_VBAT 				(MONITORING_OFFSET+5)
+#define MONITORING_ERROR				(MONITORING_OFFSET+6)
+#define MONITORING_INTC					(MONITORING_OFFSET+7)
+#define MONITORING_IS_BOOST_TRIG		(MONITORING_OFFSET+8)
+#define MONITORING_BLANK_9				(MONITORING_OFFSET+9)
+#define MONITORING_BLANK_10				(MONITORING_OFFSET+10)
+#define MONITORING_BLANK_11				(MONITORING_OFFSET+11)
+#define MONITORING_BLANK_12				(MONITORING_OFFSET+12)
+#define MONITORING_BLANK_13				(MONITORING_OFFSET+13)
+#define MONITORING_BLANK_14				(MONITORING_OFFSET+14)
+//!In any case, if below becomes bigger than 960, TAG will be overwritten by params on last page of flash
+#define MONITORING_BLANK_15				(MONITORING_OFFSET+15)
+
+#define G_MONITORING_OFF	(MONITORING_OFFSET - G8_IMP_MAX)
+#define G10_MIN      MONITORING_VOLTAGE
+#define G10_MAX      MONITORING_BLANK_15
+#define G10_IMP_MAX  MONITORING_BLANK_15
+
+
+
+#define PARAM_MAX_COUNT					MONITORING_BLANK_15
+#endif /* PARAMETER_DEFINITIONS_H_ */

@@ -1,0 +1,13 @@
+TSM2A103F3951RZ 
+
+TSM -> TSM Series NTC Thermistor
+2   -> 0805 Packet size
+A   -> B25/85 Definition of B value 	????
+103 -> R25 = 10KOhm at 25 Deg
+F   -> +-1% Tolerance
+395 -> 3950 B value 			????
+1   ->+-1% Tolerance of B value
+R   -> packaging: reel
+Z   -> rohs compliant
+
+Thermal Time Constant Approx. 5.4 tau(sec)

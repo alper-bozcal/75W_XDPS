@@ -1,0 +1,3 @@
+[submodule "Firmware/Common/Peripherals/J1939Module"]
+	path = Firmware/Common/Peripherals/J1939Module
+	url = https://github.com/en-ko/J1939Module

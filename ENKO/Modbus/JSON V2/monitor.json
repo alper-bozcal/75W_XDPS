@@ -1,0 +1,23 @@
+[
+    {
+        "object" : "config",
+        "pageCount" : 2,
+        "pageTitle" : ["Parameters", "Advanced Parameters"]
+    },
+    {
+        "object" : "table",
+        "page" : 1,
+        "row" : 1,
+        "filter" : true,
+        "paramId" : [],
+        "paramGroup" : ["Monitoring", "Set Point", "Configuration"]
+    },
+    {
+        "object" : "table",
+        "page" : 2,
+        "row" : 1,
+        "filter" : true,
+        "paramId" : [],
+        "paramGroup" : ["Advanced"]
+    }
+]

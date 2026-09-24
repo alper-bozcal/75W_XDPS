@@ -1,0 +1,47 @@
+/*
+ * j1939-adapter.h
+ *
+ *  Created on: Sep 30, 2022
+ *      Author: eren.akyol
+ */
+
+#ifndef J1939_ADAPTER_H_
+#define J1939_ADAPTER_H_
+
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+#include "J1939-module.h"
+
+
+enum CanTableName_e{
+
+	ECU_TYPE_COMMON = 0,
+	ECU_TYPE_CUMMINS_CM850,
+	ECU_TYPE_CUMMINS_ISB,
+	ECU_TYPE_DEUTZ_EMR2,
+	ECU_TYPE_DEUTZ_EMR3,
+	ECU_TYPE_GENERIC_J1939,
+	ECU_TYPE_IVECO_T3,
+	ECU_TYPE_JOHN_DEERE,
+	ECU_TYPE_MTU_ADEC,
+	ECU_TYPE_PERKINS_1300,
+	ECU_TYPE_PERKINS_ADEM3,
+	ECU_TYPE_PERKINS_ADEM4,
+	ECU_TYPE_SCANIA_S6,
+	ECU_TYPE_VOLVO_EDC3,
+	ECU_TYPE_VOLVO_EDC4,
+	ECU_TYPE_VOLVO_EMS2,
+	ECU_TYPE_VOLVO_EMS2B,
+	ECU_TYPE_YANMAR_ECO,
+	ECU_TYPE_LAST,
+};
+
+#ifdef __cplusplus
+}
+#endif
+
+
+#endif /* J1939_ADAPTER_H_ */

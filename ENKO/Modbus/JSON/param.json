@@ -1,0 +1,802 @@
+[
+    {
+        "object": "parameter",
+        "id" :1,
+        "name": "V out",
+        "group": "Voltage",
+        "modbusAddress": 520,
+        "multiplier": -2,
+        "unit": "V",
+        "signed": false,
+        "minValue": {
+            "minLimit": 1200,
+            "minLimitControl": false,
+            "minLimitColor": "yellow"
+        },
+        "maxValue": {
+            "maxLimit": 3000,
+            "maxLimitControl": false,
+            "maxLimitColor": "red"
+        }
+    },
+    {
+        "object": "parameter",
+        "id" :2,
+        "name": "I out",
+        "group": "Current",
+        "modbusAddress": 521,
+        "multiplier": -2,
+        "unit": "A",
+        "signed": false,
+        "minValue": {
+            "minLimit": 0,
+            "minLimitControl": false,
+            "minLimitColor": "yellow"
+        },
+        "maxValue": {
+            "maxLimit": 4000,
+            "maxLimitControl": false,
+            "maxLimitColor": "red"
+        }
+    },
+    {
+        "object": "parameter",
+        "id" :3,
+        "name": "V Reverse",
+        "group": "Voltage",
+        "modbusAddress": 524,
+        "multiplier": -2,
+        "unit": "V",
+        "signed": false,
+        "minValue": {
+            "minLimit": 0,
+            "minLimitControl": false,
+            "minLimitColor": "green"
+        },
+        "maxValue": {
+            "maxLimit": 3000,
+            "maxLimitControl": false,
+            "maxLimitColor": "red"
+        }
+    },
+    {
+        "object": "parameter",
+        "id" :4,
+        "name": "Onboard NTC",
+        "group": "NTC",
+        "modbusAddress": 523,
+        "multiplier": 0,
+        "unit": "°C",
+        "signed": false,
+        "minValue": {
+            "minLimit": 0,
+            "minLimitControl": false,
+            "minLimitColor": "yellow"
+        },
+        "maxValue": {
+            "maxLimit": 100000,
+            "maxLimitControl": false,
+            "maxLimitColor": "red"
+        }
+    },
+    {
+        "object": "parameter",
+        "id" :5,
+        "name": "Internal NTC",
+        "group": "Res",
+        "modbusAddress": 526,
+        "multiplier": 0,
+        "unit": "°C",
+        "signed": false,
+        "minValue": {
+            "minLimit": 0,
+            "minLimitControl": false,
+            "minLimitColor": "yellow"
+        },
+        "maxValue": {
+            "maxLimit": 65535,
+            "maxLimitControl": false,
+            "maxLimitColor": "red"
+        }
+    },
+    {
+        "object": "parameter",
+        "id" :6,
+        "name": "PT100",
+        "group": "Res",
+        "modbusAddress": 522,
+        "multiplier": -2,
+        "unit": "R",
+        "signed": false,
+        "minValue": {
+            "minLimit": 0,
+            "minLimitControl": false,
+            "minLimitColor": "yellow"
+        },
+        "maxValue": {
+            "maxLimit": 1000,
+            "maxLimitControl": false,
+            "maxLimitColor": "red"
+        }
+    },
+    {
+        "object": "parameter",
+        "id" :7,
+        "name": "V out set",
+        "group": "Set",
+        "modbusAddress": 0,
+        "multiplier": -2,
+        "unit": "V",
+        "signed": false,
+        "minValue": {
+            "minLimit": 1200,
+            "minLimitControl": false,
+            "minLimitColor": "yellow"
+        },
+        "maxValue": {
+            "maxLimit": 3000,
+            "maxLimitControl": false,
+            "maxLimitColor": "red"
+        }
+    },
+    {
+        "object": "parameter",
+        "id" :8,
+        "name": "I out set",
+        "group": "Set",
+        "modbusAddress": 1,
+        "multiplier": -2,
+        "unit": "A",
+        "signed": false,
+        "minValue": {
+            "minLimit": 0,
+            "minLimitControl": false,
+            "minLimitColor": "yellow"
+        },
+        "maxValue": {
+            "maxLimit": 4000,
+            "maxLimitControl": false,
+            "maxLimitColor": "red"
+        }
+    },
+    {
+        "object": "parameter",
+        "id" :9,
+        "name": "VPWM set",
+        "group": "Set",
+        "modbusAddress": 3,
+        "multiplier": 0,
+        "unit": "Count",
+        "signed": false,
+        "minValue": {
+            "minLimit": 0,
+            "minLimitControl": false,
+            "minLimitColor": "yellow"
+        },
+        "maxValue": {
+            "maxLimit": 959,
+            "maxLimitControl": false,
+            "maxLimitColor": "red"
+        }
+    },
+    {
+        "object": "parameter",
+        "id" :10,
+        "name": "IPWM set",
+        "group": "Set",
+        "modbusAddress": 4,
+        "multiplier": 0,
+        "unit": "Count",
+        "signed": false,
+        "minValue": {
+            "minLimit": 0,
+            "minLimitControl": false,
+            "minLimitColor": "yellow"
+        },
+        "maxValue": {
+            "maxLimit": 959,
+            "maxLimitControl": false,
+            "maxLimitColor": "red"
+        }
+    },
+    {
+        "object": "parameter",
+        "id" :11,
+        "name": "V Boost set",
+        "group": "Set",
+        "modbusAddress": 5,
+        "multiplier": -2,
+        "unit": "V",
+        "signed": false,
+        "minValue": {
+            "minLimit": 1200,
+            "minLimitControl": false,
+            "minLimitColor": "yellow"
+        },
+        "maxValue": {
+            "maxLimit": 3000,
+            "maxLimitControl": false,
+            "maxLimitColor": "red"
+        }
+    },
+    {
+        "object": "parameter",
+        "id" :12,
+        "name": "Parallel Connection",
+        "group": "Set",
+        "modbusAddress": 60,
+        "multiplier": 0,
+        "unit": " ",
+        "signed": false,
+        "minValue": {
+            "minLimit": -1,
+            "minLimitControl": false,
+            "minLimitColor": "yellow"
+        },
+        "maxValue": {
+            "maxLimit": 1,
+            "maxLimitControl": false,
+            "maxLimitColor": "red"
+        }
+    },
+    {
+        "object": "parameter",
+        "id" :13,
+        "name": "V out Calibration",
+        "group": "Set",
+        "modbusAddress": 30,
+        "multiplier": 0,
+        "unit": " ",
+        "signed": false,
+        "minValue": {
+            "minLimit": -32000,
+            "minLimitControl": false,
+            "minLimitColor": "yellow"
+        },
+        "maxValue": {
+            "maxLimit": 32000,
+            "maxLimitControl": false,
+            "maxLimitColor": "red"
+        }
+    },
+    {
+        "object": "parameter",
+        "id" :14,
+        "name": "I out Calibration",
+        "group": "Set",
+        "modbusAddress": 31,
+        "multiplier": 0,
+        "unit": " ",
+        "signed": false,
+        "minValue": {
+            "minLimit": -32000,
+            "minLimitControl": false,
+            "minLimitColor": "yellow"
+        },
+        "maxValue": {
+            "maxLimit": 32000,
+            "maxLimitControl": false,
+            "maxLimitColor": "red"
+        }
+    },
+    {
+        "object": "parameter",
+        "id" :15,
+        "name": "PT100 Calibration",
+        "group": "Set",
+        "modbusAddress": 32,
+        "multiplier": 0,
+        "unit": " ",
+        "signed": false,
+        "minValue": {
+            "minLimit": -32000,
+            "minLimitControl": false,
+            "minLimitColor": "yellow"
+        },
+        "maxValue": {
+            "maxLimit": 32000,
+            "maxLimitControl": false,
+            "maxLimitColor": "red"
+        }
+    },
+    {
+        "object": "parameter",
+        "id" :16,
+        "name": "Onboard NTC Calibration",
+        "group": "Set",
+        "modbusAddress": 33,
+        "multiplier": 0,
+        "unit": " ",
+        "signed": false,
+        "minValue": {
+            "minLimit": -32000,
+            "minLimitControl": false,
+            "minLimitColor": "yellow"
+        },
+        "maxValue": {
+            "maxLimit": 32000,
+            "maxLimitControl": false,
+            "maxLimitColor": "red"
+        }
+    },
+    {
+        "object": "parameter",
+        "id" :17,
+        "name": "V Reverse Calibration",
+        "group": "Set",
+        "modbusAddress": 34,
+        "multiplier": 0,
+        "unit": " ",
+        "signed": false,
+        "minValue": {
+            "minLimit": -32000,
+            "minLimitControl": false,
+            "minLimitColor": "yellow"
+        },
+        "maxValue": {
+            "maxLimit": 32000,
+            "maxLimitControl": false,
+            "maxLimitColor": "red"
+        }
+    },
+    {
+        "object": "parameter",
+        "id" :18,
+        "name": "Device Reset",
+        "group": "D",
+        "modbusAddress": 19,
+        "multiplier": 0,
+        "unit": " ",
+        "signed": false,
+        "minValue": {
+            "minLimit": 0,
+            "minLimitControl": false,
+            "minLimitColor": "yellow"
+        },
+        "maxValue": {
+            "maxLimit": 65535,
+            "maxLimitControl": false,
+            "maxLimitColor": "red"
+        }
+    },
+    {
+        "object": "parameter",
+        "id" :19,
+        "name": "ERROR Flag",
+        "group": "D",
+        "modbusAddress": 148,
+        "multiplier": 0,
+        "unit": " ",
+        "signed": false,
+        "minValue": {
+            "minLimit": 0,
+            "minLimitControl": false,
+            "minLimitColor": "yellow"
+        },
+        "maxValue": {
+            "maxLimit": 65535,
+            "maxLimitControl": false,
+            "maxLimitColor": "red"
+        }
+    },
+    {
+        "object": "parameter",
+        "id" :20,
+        "name": "WARN Flag",
+        "group": "D",
+        "modbusAddress": 160,
+        "multiplier": 0,
+        "unit": " ",
+        "signed": false,
+        "minValue": {
+            "minLimit": 0,
+            "minLimitControl": false,
+            "minLimitColor": "yellow"
+        },
+        "maxValue": {
+            "maxLimit": 65535,
+            "maxLimitControl": false,
+            "maxLimitColor": "red"
+        }
+    },
+    {
+        "object": "parameter",
+        "id" :21,
+        "name": "PT100 Compensation Act",
+        "group": "set",
+        "modbusAddress": 56,
+        "multiplier": 0,
+        "unit": " ",
+        "signed": false,
+        "minValue": {
+            "minLimit": 0,
+            "minLimitControl": false,
+            "minLimitColor": "yellow"
+        },
+        "maxValue": {
+            "maxLimit": 1,
+            "maxLimitControl": false,
+            "maxLimitColor": "red"
+        }
+    },
+    {
+        "object": "parameter",
+        "id" :22,
+        "name": "LED Flash Time",
+        "group": "read",
+        "modbusAddress": 71,
+        "multiplier": 0,
+        "unit": " ",
+        "signed": false,
+        "minValue": {
+            "minLimit": 0,
+            "minLimitControl": false,
+            "minLimitColor": "yellow"
+        },
+        "maxValue": {
+            "maxLimit": 8192,
+            "maxLimitControl": false,
+            "maxLimitColor": "red"
+        }
+    },
+    {
+        "object": "parameter",
+        "id" :23,
+        "name": "LED Constant",
+        "group": "read",
+        "modbusAddress": 72,
+        "multiplier": 0,
+        "unit": " ",
+        "signed": false,
+        "minValue": {
+            "minLimit": 0,
+            "minLimitControl": false,
+            "minLimitColor": "yellow"
+        },
+        "maxValue": {
+            "maxLimit": 1,
+            "maxLimitControl": false,
+            "maxLimitColor": "red"
+        }
+    },
+    {
+        "object": "parameter",
+        "id" :24,
+        "name": "LED Blink Times",
+        "group": "read",
+        "modbusAddress": 73,
+        "multiplier": 0,
+        "unit": " ",
+        "signed": false,
+        "minValue": {
+            "minLimit": 0,
+            "minLimitControl": false,
+            "minLimitColor": "yellow"
+        },
+        "maxValue": {
+            "maxLimit": 10,
+            "maxLimitControl": false,
+            "maxLimitColor": "red"
+        }
+    },
+    {
+        "object": "parameter",
+        "id" :25,
+        "name": "Led Color",
+        "group": "read",
+        "modbusAddress": 70,
+        "multiplier": 0,
+        "unit": " ",
+        "signed": false,
+        "minValue": {
+            "minLimit": 0,
+            "minLimitControl": false,
+            "minLimitColor": "yellow"
+        },
+        "maxValue": {
+            "maxLimit": 32000,
+            "maxLimitControl": false,
+            "maxLimitColor": "red"
+        }
+    },
+    {
+        "object": "parameter",
+        "id" :26,
+        "name": "PSU Mode Activate",
+        "group": "read",
+        "modbusAddress": 27,
+        "multiplier": 0,
+        "unit": " ",
+        "signed": false,
+        "minValue": {
+            "minLimit": 0,
+            "minLimitControl": false,
+            "minLimitColor": "yellow"
+        },
+        "maxValue": {
+            "maxLimit": 1,
+            "maxLimitControl": false,
+            "maxLimitColor": "red"
+        }
+    },
+    {
+        "object": "parameter",
+        "id" :27,
+        "name": "Charge State",
+        "group": "read",
+        "modbusAddress": 171,
+        "multiplier": 0,
+        "unit": " ",
+        "signed": false,
+        "minValue": {
+            "minLimit": 0,
+            "minLimitControl": false,
+            "minLimitColor": "yellow"
+        },
+        "maxValue": {
+            "maxLimit": 32000,
+            "maxLimitControl": false,
+            "maxLimitColor": "red"
+        }
+    },
+    {
+        "object": "parameter",
+        "id" :28,
+        "name": "Auto Select Activate",
+        "group": "read",
+        "modbusAddress": 26,
+        "multiplier": 0,
+        "unit": " ",
+        "signed": false,
+        "minValue": {
+            "minLimit": 0,
+            "minLimitControl": false,
+            "minLimitColor": "yellow"
+        },
+        "maxValue": {
+            "maxLimit": 1,
+            "maxLimitControl": false,
+            "maxLimitColor": "red"
+        }
+    },
+    {
+        "object": "parameter",
+        "id" :29,
+        "name": "PWMFLAG",
+        "group": "read",
+        "modbusAddress": 21,
+        "multiplier": 0,
+        "unit": " ",
+        "signed": false,
+        "minValue": {
+            "minLimit": 0,
+            "minLimitControl": false,
+            "minLimitColor": "yellow"
+        },
+        "maxValue": {
+            "maxLimit": 1,
+            "maxLimitControl": false,
+            "maxLimitColor": "red"
+        }
+    },
+    {
+        "object": "parameter",
+        "id" :30,
+        "name": "SW Version",
+        "group": "read",
+        "modbusAddress": 124,
+        "multiplier": -3,
+        "unit": " ",
+        "signed": false,
+        "minValue": {
+            "minLimit": 0,
+            "minLimitControl": false,
+            "minLimitColor": "yellow"
+        },
+        "maxValue": {
+            "maxLimit": 65535,
+            "maxLimitControl": false,
+            "maxLimitColor": "red"
+        }
+    },
+    {
+        "object": "parameter",
+        "id" :31,
+        "name": "Factory Reset",
+        "group": "read",
+        "modbusAddress": 173,
+        "multiplier": 0,
+        "unit": " ",
+        "signed": false,
+        "minValue": {
+            "minLimit": 0,
+            "minLimitControl": false,
+            "minLimitColor": "yellow"
+        },
+        "maxValue": {
+            "maxLimit": 65535,
+            "maxLimitControl": false,
+            "maxLimitColor": "red"
+        }
+    },
+    {
+        "object": "parameter",
+        "id" :32,
+        "name": "Parallel Current Coef",
+        "group": "Set",
+        "modbusAddress": 61,
+        "multiplier": -2,
+        "unit": "V/A",
+        "signed": false,
+        "minValue": {
+            "minLimit": 0,
+            "minLimitControl": false,
+            "minLimitColor": "yellow"
+        },
+        "maxValue": {
+            "maxLimit": 65535,
+            "maxLimitControl": false,
+            "maxLimitColor": "red"
+        }
+    },
+    {
+        "object": "parameter",
+        "id" :33,
+        "name": "PT100 Compensation Coef",
+        "group": "Set",
+        "modbusAddress": 57,
+        "multiplier": 0,
+        "unit": "V/T",
+        "signed": false,
+        "minValue": {
+            "minLimit": 0,
+            "minLimitControl": false,
+            "minLimitColor": "yellow"
+        },
+        "maxValue": {
+            "maxLimit": 65535,
+            "maxLimitControl": false,
+            "maxLimitColor": "red"
+        }
+    },
+    {
+        "object": "parameter",
+        "id" :34,
+        "name": "PT100 Max Temp",
+        "group": "read",
+        "modbusAddress": 58,
+        "multiplier": 0,
+        "unit": "°C",
+        "signed": false,
+        "minValue": {
+            "minLimit": 0,
+            "minLimitControl": false,
+            "minLimitColor": "yellow"
+        },
+        "maxValue": {
+            "maxLimit": 65535,
+            "maxLimitControl": false,
+            "maxLimitColor": "red"
+        }
+    },
+    {
+        "object": "parameter",
+        "id" :35,
+        "name": "Min Equalization Time",
+        "group": "read",
+        "modbusAddress": 11,
+        "multiplier": 0,
+        "unit": "Min",
+        "signed": false,
+        "minValue": {
+            "minLimit": 0,
+            "minLimitControl": false,
+            "minLimitColor": "yellow"
+        },
+        "maxValue": {
+            "maxLimit": 65535,
+            "maxLimitControl": false,
+            "maxLimitColor": "red"
+        }
+    },
+    {
+        "object": "parameter",
+        "id" :36,
+        "name": "Min Auto Boost Interval",
+        "group": "read",
+        "modbusAddress": 12,
+        "multiplier": 0,
+        "unit": "Min",
+        "signed": false,
+        "minValue": {
+            "minLimit": 0,
+            "minLimitControl": false,
+            "minLimitColor": "yellow"
+        },
+        "maxValue": {
+            "maxLimit": 65535,
+            "maxLimitControl": false,
+            "maxLimitColor": "red"
+        }
+    },
+    {
+        "object": "parameter",
+        "id" :37,
+        "name": "Derate Activated",
+        "group": "Set",
+        "modbusAddress": 174,
+        "multiplier": 0,
+        "unit": "",
+        "signed": false,
+        "minValue": {
+            "minLimit": 0,
+            "minLimitControl": false,
+            "minLimitColor": "yellow"
+        },
+        "maxValue": {
+            "maxLimit": 1,
+            "maxLimitControl": false,
+            "maxLimitColor": "red"
+        }
+    },
+    {
+        "object": "parameter",
+        "id" :38,
+        "name": "Output Model",
+        "group": "read",
+        "modbusAddress": 28,
+        "multiplier": 0,
+        "unit": "",
+        "signed": false,
+        "minValue": {
+            "minLimit": 0,
+            "minLimitControl": false,
+            "minLimitColor": "yellow"
+        },
+        "maxValue": {
+            "maxLimit": 65535,
+            "maxLimitControl": false,
+            "maxLimitColor": "red"
+        }
+    },
+    {
+        "object": "parameter",
+        "id" :39,
+        "name": "Output Active",
+        "group": "read",
+        "modbusAddress": 29,
+        "multiplier": 0,
+        "unit": "",
+        "signed": false,
+        "minValue": {
+            "minLimit": 0,
+            "minLimitControl": false,
+            "minLimitColor": "yellow"
+        },
+        "maxValue": {
+            "maxLimit": 1,
+            "maxLimitControl": false,
+            "maxLimitColor": "red"
+        }
+    },
+    {
+        "object": "parameter",
+        "id" :40,
+        "name": "Boost Triggered",
+        "group": "read",
+        "modbusAddress": 527,
+        "multiplier": 0,
+        "unit": "",
+        "signed": false,
+        "minValue": {
+            "minLimit": 0,
+            "minLimitControl": false,
+            "minLimitColor": "yellow"
+        },
+        "maxValue": {
+            "maxLimit": 1,
+            "maxLimitControl": false,
+            "maxLimitColor": "red"
+        }
+    }
+]

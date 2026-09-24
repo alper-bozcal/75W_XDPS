@@ -1,0 +1,115 @@
+[
+
+    {
+        "object" : "datacard",
+        "row" : 1,
+        "tag" : [1,2,3,4,5,6]
+    },
+    {
+        "object" : "datacard",
+        "row" : 2,
+        "tag" : [7,8,11,20,19,30]
+    },
+    {
+        "object" : "datacard",
+        "row" : 3,
+        "tag" : [13,14,15,16,17,27]
+    },
+    {
+        "object" : "datacard",
+        "row" : 4,
+        "tag" : [12,32,18,31,35,36]
+    },
+    {
+        "object" : "datacard",
+        "row" : 5,
+        "tag" : [26,28,21,33,34]
+    },
+    {
+        "object" : "datacard",
+        "row" : 6,
+        "tag" : [38,39,40]
+    },
+
+    {
+        "object" : "datacard",
+        "row" : 7,
+        "tag" : [9,10,29,22,23,24,25,37]
+    },
+    {
+        "object" : "alarmcard",
+        "row" : 7,
+        "title" : "Warning Indicator",
+        "menu" : [{
+            "name" : "ADC Open",
+            "tag" : 20,
+            "bit" : 1,
+            "nonc" : 1,
+            "color" : "red",
+            "blink" : true
+        },
+        {
+            "name" : "over Temp",
+            "tag" : 20,
+            "bit" : 2,
+            "nonc" : 1,
+            "color" : "red",
+            "blink" : true
+        },
+        {
+            "name" : "PT Conn",
+            "tag" : 20,
+            "bit" : 3,
+            "nonc" : 1,
+            "color" : "red",
+            "blink" : true
+        },
+        {
+            "name" : "PT Temp",
+            "tag" : 20,
+            "bit" : 4,
+            "nonc" : 1,
+            "color" : "red",
+            "blink" : true
+        },
+        {
+            "name" : "Wrong Batt",
+            "tag" : 20,
+            "bit" : 5,
+            "nonc" : 1,
+            "color" : "red",
+            "blink" : true
+        }
+        ]
+    },
+    {
+        "object" : "alarmcard",
+        "row" : 7,
+        "title" : "Error Indicator",
+        "menu" : [{
+            "name" : "Rev Batt",
+            "tag" : 19,
+            "bit" : 1,
+            "nonc" : 1,
+            "color" : "red",
+            "blink" : true
+        },
+        {
+            "name" : "Temp Err",
+            "tag" : 19,
+            "bit" : 2,
+            "nonc" : 1,
+            "color" : "red",
+            "blink" : true
+        },
+        {
+            "name" : "Over Volt",
+            "tag" : 19,
+            "bit" : 3,
+            "nonc" : 1,
+            "color" : "red",
+            "blink" : true
+        }
+        ]
+    }
+]

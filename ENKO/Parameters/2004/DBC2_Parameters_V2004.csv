@@ -1,0 +1,90 @@
+DevId•PowerCloudId•Version•Name-1•Name-2•Group-1•Group-2•Unit-1•Unit-2•ModbusAddress•DataLength•Coef•Signed•View•MinValue•MaxValue•DefaultValue•DataOperation•DataOperationValue•ReadOnly•Comment-1•Comment-2•Value•Mask-1•Mask-2•RelationPId•RelationValue•Relation•RelationComment-1•RelationComment-2•ReadAccessLevel•WriteAccessLevel•HeaderParamName•HeaderParamGroupName•HeaderParamComment•JSON•UserInfo
+0•0•2004•Output Voltage Set•Çıkış Voltaj Ayarı•Set Point•Çalışma Noktası•V•V•0•1•-2•FALSE•Decimal•1200•1500•1380•••FALSE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+1•1•2004•Output Voltage Effective•Çıkış Voltaj Efektif•Monitoring•Monitor•V•V•1•1•-2•FALSE•Decimal•0•1500•1380•••FALSE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+2•2•2004•Output Current Set•Çıkış Akım Ayarı•Set Point•Çalışma Noktası•A•A•2•1•-2•FALSE•Decimal•0•600•500•••FALSE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+3•3•2004•Output Current Effective•Çıkış Akım Efektif•Monitoring•Monitor•A•A•3•1•-2•FALSE•Decimal•0•600•500•••FALSE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+4•4•2004•Boost Voltage Set•Boost Voltaj Ayarı•Set Point•Çalışma Noktası•V•V•4•1•-2•FALSE•Decimal•1200•1500•1450•••FALSE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+5•5•2004•Equ Time•Equ Zamanı•Set Point•Çalışma Noktası•Min•Dk•5•1•0•FALSE•Decimal•0•32000•0•••FALSE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+6•6•2004•Auto Boost Time•Oto Boost Zamanı•Set Point•Çalışma Noktası•Min•Dk•6•1•0•FALSE•Decimal•0•32000•10000•••FALSE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+10•10•2004•Charge State•Şarj Durumu•Set Point•Çalışma Noktası•••10•1•0•FALSE•Decimal•0•10•0•••TRUE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+10•10•2004••••••••••••••••••••0•BOOST•BOOST••••••••••••
+10•10•2004••••••••••••••••••••1•EQUALIZATION•EQUALIZATION••••••••••••
+10•10•2004••••••••••••••••••••2•FLOAT•FLOAT••••••••••••
+11•11•2004•Auto Boost•Oto Boost•Set Point•Çalışma Noktası•••11•1•0•FALSE•Decimal•0•1•0•••FALSE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+11•11•2004••••••••••••••••••••0•DISABLED•PASIF••••••••••••
+11•11•2004••••••••••••••••••••1•ENABLED•AKTIF••••••••••••
+12•12•2004•PSU Mode•PSU Mod•Set Point•Çalışma Noktası•••12•1•0•FALSE•Decimal•0•1•0•••FALSE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+12•12•2004••••••••••••••••••••0•CHARGER•CHARGER••••••••••••
+12•12•2004••••••••••••••••••••1•PSU•PSU••••••••••••
+13•13•2004•Auto Battery Detection•Oto Batarya Tanıma•Set Point•Çalışma Noktası•••13•1•0•FALSE•Decimal•0•1•0•••FALSE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+13•13•2004••••••••••••••••••••0•DISABLED•PASIF••••••••••••
+13•13•2004••••••••••••••••••••1•ENABLED•AKTIF••••••••••••
+14•14•2004•Parallel Working•Paralel Çalışma•Configuration•Konfigürasyon•••14•1•0•FALSE•Decimal•0•1•0•••FALSE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+14•14•2004••••••••••••••••••••0•DISABLED•PASIF••••••••••••
+14•14•2004••••••••••••••••••••1•ENABLED•AKTIF••••••••••••
+15•15•2004•Parallel Coefficient•Paralel Katsayısı•Configuration•Konfigürasyon•V/A•V/A•15•1•-2•FALSE•Decimal•0•100•3•••FALSE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+16•16•2004•PT100 Activated•PT100 Girişi•Configuration•Konfigürasyon•••16•1•0•FALSE•Decimal•0•1•0•••FALSE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+16•16•2004••••••••••••••••••••0•DISABLED•PASIF••••••••••••
+16•16•2004••••••••••••••••••••1•ENABLED•AKTIF••••••••••••
+17•17•2004•PT100 DVDT•PT100 DVDT•Configuration•Konfigürasyon•mV/°C•mV/°C•17•1•1•FALSE•Decimal•0•1000•0•••FALSE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+18•18•2004•PT100 Derate Temp•PT100 Derate Temp•Configuration•Konfigürasyon•°C •°C •18•1•-1•FALSE•Decimal•0•10000•1000•••FALSE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+19•19•2004•PT100 Max Temp•PT100 Max Temp•Configuration•Konfigürasyon•°C •°C •19•1•-1•FALSE•Decimal•65•200•100•••FALSE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+20•20•2004•Max Ambient Temp•Maks Ortam Sıcaklığı•Monitoring•Monitor•°C•°C•20•1•0•FALSE•Decimal•0•128•0•••TRUE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+21•21•2004•Output Voltage•Çıkış Voltajı•Monitoring•Monitor•V•V•21•1•-2•FALSE•Decimal•0•3200•0•••TRUE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+22•22•2004•Output Current •Çıkış Akımı•Monitoring•Monitor•A•A•22•1•-2•FALSE•Decimal•0•1200•0•••TRUE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+23•23•2004•PT100 Resistance•PT100 Direnç•Monitoring•Monitor•R•R•23•1•-2•FALSE•Decimal•0•10000•0•••TRUE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+24•24•2004•PT100 Temp•PT100 Sıcaklık•Monitoring•Monitor•°C•°C•24•1•-1•TRUE•Decimal•0•12800•0•••TRUE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+25•25•2004•Onboard NTC Temp•Kart NTC Sıcaklığı•Monitoring•Monitor•°C•°C•25•1•0•FALSE•Decimal•0•1280•0•••TRUE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+26•26•2004•Internal NTC Temp•MCU NTC Sıcaklığı•Monitoring•Monitor•°C•°C•26•1•0•FALSE•Decimal•0•128•0•••TRUE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+27•27•2004•Battery Voltage (Reverse)•Batarya Voltajı (Ters)•Monitoring•Monitor•V•V•27•1•-2•FALSE•Decimal•0•3200•0•••TRUE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+28•28•2004•Is Boost Active•Boost Mod Aktif•Monitoring•Monitor•••28•1•0•FALSE•Decimal•0•1•0•••TRUE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+28•28•2004••••••••••••••••••••0•DISABLED•PASIF••••••••••••
+28•28•2004••••••••••••••••••••1•ENABLED•AKTIF••••••••••••
+29•29•2004•Model•Model•Monitoring•Monitor•••29•1•0•FALSE•Decimal•0•65535•0•••TRUE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+31•31•2004•Error Flags•Hatalar•Monitoring•Monitor•••31•1•0•FALSE•Decimal•0•65535•0•••TRUE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+32•32•2004•Warning Flags•Uyarılar•Monitoring•Monitor•••32•1•0•FALSE•Decimal•0•65535•0•••TRUE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+41•41•2004•Return To Factory Parameters•Parametreleri Sıfırla•Configuration•Konfigürasyon•••41•1•0•FALSE•Decimal•0•1•0•••FALSE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+41•41•2004••••••••••••••••••••0•DISABLED•PASIF••••••••••••
+41•41•2004••••••••••••••••••••1•ENABLED•AKTIF••••••••••••
+42•42•2004•Output Voltage PWM•Output Voltage PWM•Configuration•Konfigürasyon•••42•1•0•FALSE•Decimal•0•1000•0•••FALSE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+43•43•2004•Output Current PWM•Output Current PWM•Configuration•Konfigürasyon•••43•1•0•FALSE•Decimal•0•1000•1000•••FALSE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+44•44•2004•PWM Flag•PWM Flag•Monitoring•Monitor•••44•1•0•FALSE•Decimal•0•1•0•••TRUE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+46•46•2004•Is Cutoff Active•Çıkış Aktif•Monitoring•Monitor•••46•1•0•FALSE•Decimal•0•1•0•••TRUE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+46•46•2004••••••••••••••••••••0•NOT CONDUCTING•KESIMDE••••••••••••
+46•46•2004••••••••••••••••••••1•CONDUCTING•ILETIMDE••••••••••••
+47•47•2004•Is Relay Active•Röle Aktif•Monitoring•Monitor•••47•1•0•FALSE•Decimal•0•1•0•••TRUE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+47•47•2004••••••••••••••••••••0•DISABLED•PASIF••••••••••••
+47•47•2004••••••••••••••••••••1•ENABLED•AKTIF••••••••••••
+51•51•2004•Derate Enable•Derate Enable•Configuration•Konfigürasyon•••51•1•0•FALSE•Decimal•0•1•0•••FALSE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+51•51•2004••••••••••••••••••••0•DISABLED•PASIF••••••••••••
+51•51•2004••••••••••••••••••••1•ENABLED•AKTIF••••••••••••
+56•56•2004•OFFSET VOUT•OFFSET VOUT•Calibration•Kalibrasyon•••56•1•0•FALSE•Decimal•0•65535•0•••FALSE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+57•57•2004•RATIO VOUT•RATIO VOUT•Calibration•Kalibrasyon•••57•1•0•FALSE•Decimal•0•65535•0•••FALSE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+58•58•2004•SHIFT VOUT•SHIFT VOUT•Calibration•Kalibrasyon•••58•1•0•FALSE•Decimal•0•65535•0•••FALSE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+59•59•2004•OFFSET IOUT•OFFSET IOUT•Calibration•Kalibrasyon•••59•1•0•FALSE•Decimal•0•65535•0•••FALSE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+60•60•2004•RATIO IOUT•RATIO IOUT•Calibration•Kalibrasyon•••60•1•0•FALSE•Decimal•0•65535•0•••FALSE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+61•61•2004•SHIFT IOUT•SHIFT IOUT•Calibration•Kalibrasyon•••61•1•0•FALSE•Decimal•0•65535•0•••FALSE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+65•65•2004•OFFSET ONTC•OFFSET ONTC•Calibration•Kalibrasyon•••65•1•0•FALSE•Decimal•0•65535•0•••FALSE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+66•66•2004•RATIO ONTC•RATIO ONTC•Calibration•Kalibrasyon•••66•1•0•FALSE•Decimal•0•65535•0•••FALSE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+67•67•2004•SHIFT ONTC•SHIFT ONTC•Calibration•Kalibrasyon•••67•1•0•FALSE•Decimal•0•65535•0•••FALSE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+68•68•2004•OFFSET VBAT•OFFSET VBAT•Calibration•Kalibrasyon•••68•1•0•FALSE•Decimal•0•65535•0•••FALSE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+69•69•2004•RATIO VBAT•RATIO VBAT•Calibration•Kalibrasyon•••69•1•0•FALSE•Decimal•0•65535•0•••FALSE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+70•70•2004•SHIFT VBAT•SHIFT VBAT•Calibration•Kalibrasyon•••70•1•0•FALSE•Decimal•0•65535•0•••FALSE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+71•71•2004•OFFSET PT100•OFFSET PT100•Calibration•Kalibrasyon•••71•1•0•FALSE•Decimal•0•65535•0•••FALSE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+72•72•2004•RATIO PT100•RATIO PT100•Calibration•Kalibrasyon•••72•1•0•FALSE•Decimal•0•65535•0•••FALSE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+73•73•2004•SHIFT PT100•SHIFT PT100•Calibration•Kalibrasyon•••73•1•0•FALSE•Decimal•0•65535•0•••FALSE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+74•74•2004•SAVE CALIBRATIONS•SAVE CALIBRATIONS•Calibration•Kalibrasyon•••74•1•0•FALSE•Decimal•0•65535•0•••FALSE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+74•74•2004••••••••••••••••••••0•DISABLED•PASIF••••••••••••
+74•74•2004••••••••••••••••••••1•ENABLED•AKTIF••••••••••••
+75•75•2004•ADCMIN VOUT•ADCMIN VOUT•Calibration•Kalibrasyon•••75•1•0•FALSE•Decimal•0•65535•0•••FALSE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+76•76•2004•ADCMAX VOUT•ADCMAX VOUT•Calibration•Kalibrasyon•••76•1•0•FALSE•Decimal•0•65535•0•••FALSE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+77•77•2004•ADCMIN IOUT•ADCMIN IOUT•Calibration•Kalibrasyon•••77•1•0•FALSE•Decimal•0•65535•0•••FALSE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+78•78•2004•ADCMAX IOUT•ADCMAX IOUT•Calibration•Kalibrasyon•••78•1•0•FALSE•Decimal•0•65535•0•••FALSE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+81•81•2004•ADCMIN ONTC•ADCMIN ONTC•Calibration•Kalibrasyon•••81•1•0•FALSE•Decimal•0•65535•0•••FALSE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+82•82•2004•ADCMAX ONTC•ADCMAX ONTC•Calibration•Kalibrasyon•••82•1•0•FALSE•Decimal•0•65535•0•••FALSE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+83•83•2004•ADCMIN PT100•ADCMIN PT100•Calibration•Kalibrasyon•••83•1•0•FALSE•Decimal•0•65535•0•••FALSE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+84•84•2004•ADCMAX PT100•ADCMAX PT100•Calibration•Kalibrasyon•••84•1•0•FALSE•Decimal•0•65535•0•••FALSE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+85•85•2004•ADCMIN VBAT•ADCMIN VBAT•Calibration•Kalibrasyon•••85•1•0•FALSE•Decimal•0•65535•0•••FALSE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+86•86•2004•ADCMAX VBAT•ADCMAX VBAT•Calibration•Kalibrasyon•••86•1•0•FALSE•Decimal•0•65535•0•••FALSE•-•-•••••••••5•5•OUTPUT_VOLTAGE•Set Point•-•1•1
+9974•9974•2004•Device BL Version•Bootloader Versiyonu•Device•Device•••9974•1•-3•FALSE•Decimal•1000•32767•1000•••TRUE•Bootloader Versiyon Numarası•Current bootloader version•••••••••5•5•DEVICE_BOOTLOADER_VER•Device•-•1•1
+9975•9975•2004•Device SW Version•Cihaz Yazılım Versiyonu•Device•Device•••9975•1•-3•FALSE•Decimal•1000•32767•1000•••TRUE•Yazılım Versiyon Numarası•Current software version•••••••••5•5•DEVICE_SOFTWARE_VER•Device•-•1•1
