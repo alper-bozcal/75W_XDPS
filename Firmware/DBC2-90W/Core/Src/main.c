@@ -42,6 +42,7 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
+volatile uint16_t vPwmDuty = 0; // V_PWM duty golgesi, bkz. defaults.h V_PWM_APPLY
 
 /* USER CODE END PV */
 

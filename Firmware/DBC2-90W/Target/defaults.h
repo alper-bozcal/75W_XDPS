@@ -192,14 +192,21 @@ extern CAN_HandleTypeDef hcan;
 /*----------------------------------------------------------------------------------------------------------------*/
 extern TIM_HandleTypeDef       htim14;
 extern TIM_HandleTypeDef       htim3;
+extern TIM_HandleTypeDef       htim2;
 #define TIMER_1MS              htim14
-#define TIMER_PWM              htim3
+#define TIMER_PWM              htim3   // I_PWM (PB0, TIM3_CH3)
+#define TIMER_V_PWM            htim2   // V_PWM (PB10, TIM2_CH3)
 
 // PWM Output Timer Configs
-#define V_PWM_DUTY  (TIM3->CCR4)
-#define I_PWM_DUTY  (TIM3->CCR3)
-#define V_PWM_CH    TIM_CHANNEL_4
-#define I_PWM_CH    TIM_CHANNEL_3
+// V_PWM TIM2'de (32 bit CCR). Modbus 16 bit yazar; APB bunu 32 bite cogaltir
+// ((x<<16)|x -> %100 duty). Bu yuzden V_PWM_DUTY RAM'de tutulur, V_PWM_APPLY()
+// ile 32 bit olarak TIM2->CCR3'e yazilir.
+extern volatile uint16_t vPwmDuty;
+#define V_PWM_DUTY    vPwmDuty
+#define V_PWM_APPLY() (TIM2->CCR3 = (uint32_t)vPwmDuty)
+#define I_PWM_DUTY    (TIM3->CCR3)
+#define V_PWM_CH      TIM_CHANNEL_3
+#define I_PWM_CH      TIM_CHANNEL_3
 // PWM Duty Limits
 #define PWM_MAX   3200
 #define PWM_MIN   0

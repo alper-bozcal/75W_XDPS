@@ -142,9 +142,16 @@ void _initPWM(void){
   // Initialize PWM duty cycles to zero for new frequency
   V_PWM_DUTY = 0;
   I_PWM_DUTY = 0;
+#ifdef V_PWM_APPLY
+  V_PWM_APPLY();
+#endif
 
   HAL_TIM_PWM_Start(&TIMER_PWM, I_PWM_CH);
+#ifdef TIMER_V_PWM
+  HAL_TIM_PWM_Start(&TIMER_V_PWM, V_PWM_CH);
+#else
   HAL_TIM_PWM_Start(&TIMER_PWM, V_PWM_CH);
+#endif
 }
 
 void _initTimer(void){
@@ -746,6 +753,9 @@ void _coreLoop(void){
 //    if(currentPID.flagAntiWindup == ENABLED) updatePID(&voltagePID, controller.effectiveVoltage, measuredValues.Vout);
     updatePID(&voltagePID, controller.effectiveVoltage, measuredValues.Vout);
     if(controller.flagPWM == 0) V_PWM_DUTY = voltagePID.output;
+#ifdef V_PWM_APPLY
+    V_PWM_APPLY(); // PID veya Modbus (flagPWM=1) degerini timer'a yaz
+#endif
 
     // Update operating mode for Modbus
     getOperatingMode(&measuredValues);

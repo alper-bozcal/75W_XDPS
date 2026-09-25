@@ -92,7 +92,7 @@ void Error_Handler(void);
 #define I_OUT_ADC_GPIO_Port GPIOA
 #define I_PWM_Pin GPIO_PIN_0
 #define I_PWM_GPIO_Port GPIOB
-#define V_PWM_Pin GPIO_PIN_1
+#define V_PWM_Pin GPIO_PIN_10
 #define V_PWM_GPIO_Port GPIOB
 #define OVER_VOLT_Pin GPIO_PIN_15
 #define OVER_VOLT_GPIO_Port GPIOA
