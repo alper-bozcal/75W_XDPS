@@ -104,6 +104,8 @@ void Error_Handler(void);
 #define LED_B_GPIO_Port GPIOB
 #define LED_R_Pin GPIO_PIN_6
 #define LED_R_GPIO_Port GPIOB
+#define NTC_ACTIVE_Pin GPIO_PIN_7
+#define NTC_ACTIVE_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 // V7 kartinda OUTPUT_HEALTY PA6'da. CubeMX PC13 uretir, burada ezilir.
