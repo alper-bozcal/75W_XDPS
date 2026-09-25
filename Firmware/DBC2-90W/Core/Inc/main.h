@@ -88,10 +88,10 @@ void Error_Handler(void);
 #define BOOST_INP_Pin GPIO_PIN_5
 #define BOOST_INP_GPIO_Port GPIOA
 #define BOOST_INP_EXTI_IRQn EXTI4_15_IRQn
-#define I_OUT_ADC_Pin GPIO_PIN_7
-#define I_OUT_ADC_GPIO_Port GPIOA
 #define I_PWM_Pin GPIO_PIN_0
 #define I_PWM_GPIO_Port GPIOB
+#define I_OUT_ADC_Pin GPIO_PIN_1
+#define I_OUT_ADC_GPIO_Port GPIOB
 #define V_PWM_Pin GPIO_PIN_10
 #define V_PWM_GPIO_Port GPIOB
 #define OVER_VOLT_Pin GPIO_PIN_15

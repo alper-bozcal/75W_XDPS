@@ -164,7 +164,7 @@ extern volatile uint16_t ADCValues[DMA_SIZE];
 #define ADC_ORD_PT100          1 // CH 1
 #define ADC_ORD_VBAT           2 // CH 3
 #define ADC_ORD_VOUT           3 // CH 4
-#define ADC_ORD_IOUT           4 // CH 7
+#define ADC_ORD_IOUT           4 // CH 9 (PB1)
 #define ADC_ORD_INTC           5 // CH X
 //ADC Values
 #define ADC_VAL_ONTC           ADCValues[ADC_ORD_ONTC]
