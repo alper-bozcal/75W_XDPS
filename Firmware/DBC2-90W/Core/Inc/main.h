@@ -73,13 +73,8 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#ifdef PCB_VERSION_V7
-#define OUTPUT_HEALTY_Pin GPIO_PIN_6
-#define OUTPUT_HEALTY_GPIO_Port GPIOA
-#else
 #define OUTPUT_HEALTY_Pin GPIO_PIN_13
 #define OUTPUT_HEALTY_GPIO_Port GPIOC
-#endif
 #define V_NTC_ADC_Pin GPIO_PIN_0
 #define V_NTC_ADC_GPIO_Port GPIOA
 #define PT100_ADC_Pin GPIO_PIN_1
@@ -111,7 +106,13 @@ void Error_Handler(void);
 #define LED_R_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
-
+// V7 kartinda OUTPUT_HEALTY PA6'da. CubeMX PC13 uretir, burada ezilir.
+#ifdef PCB_VERSION_V7
+#undef  OUTPUT_HEALTY_Pin
+#undef  OUTPUT_HEALTY_GPIO_Port
+#define OUTPUT_HEALTY_Pin       GPIO_PIN_6
+#define OUTPUT_HEALTY_GPIO_Port GPIOA
+#endif
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus
