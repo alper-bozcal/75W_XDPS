@@ -102,10 +102,10 @@
 
 #define MIN_VOLTAGE             1200
 #define MAX_VOLTAGE             1500
-#define MAX_CURRENT             600
-#define NOM_CURRENT             500
+#define MAX_CURRENT             1200
+#define NOM_CURRENT             1000
 #define MIN_CURRENT             100
-#define POWER                   900000
+#define POWER                   1500000
 
 #define MIN_CABLE_DROP            0
 #define MAX_CABLE_DROP            200
